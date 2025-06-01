@@ -1,0 +1,578 @@
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background: #ffe294;
+  color: #000000;
+  font-size: 18px;
+  padding: 40px;
+}
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #ffcc80; /* برتقالي فاتح */
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: #ff6f00;
+}
+
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.signout {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.logo img {
+  width: 180px;
+  height: auto;
+}
+
+.name {
+  color: #ff8800;
+}
+
+.roles {
+  font-size: 18px;
+  color: #000000;
+  margin: 10px 0;
+}
+
+.bio {
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 17px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s;
+}
+
+.btn.blue {
+  background-color: #ff7b00;
+}
+
+.btn.red {
+  background-color: #ff0000;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.about {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about .subtitle {
+  font-size: 18px;
+  color: #424242;
+  margin-bottom: 30px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.about-text {
+  max-width: 500px;
+  text-align: right;
+}
+
+.about-media .placeholder {
+  width: 250px;
+  height: 250px;
+  background: #fffcd0;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: #fff3e0;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.stat-box {
+  background: white;
+  padding: 20px 40px;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.stat-box h3 {
+  font-size: 36px;
+  color: #ff8800;
+  margin-bottom: 5px;
+}
+
+.stat-box p {
+  font-size: 16px;
+  color: #444;
+}
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+.projects {
+  padding: 60px 20px;
+  background-color: #fff3e0; /* برتقالي فاتح */
+  text-align: center;
+}
+
+.projects .subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.project-list-column {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
+.project-card {
+  background-color: white;
+  padding: 20px 25px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  text-align: right;
+}
+
+.project-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.project-card .btn {
+  background-color: #ff8800;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.skills-section {
+  padding: 60px 20px;
+  background-color: #fff3e0;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 32px;
+  color: #ff6f00;
+  margin-bottom: 10px;
+}
+
+.skills-sub {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  color: #ff6f00;
+  font-weight: bold;
+}
+
+.contact-section {
+  background-color: #fff3e0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  color: #ff6f00;
+  margin-bottom: 30px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse; /* عشان الروابط تكون على اليمين */
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: right;
+}
+
+.contact-btn {
+  background-color: #ff6f00;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+.contact-btn:hover {
+  background-color: #e65100;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  text-align: right;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background-color: #e65100;
+}
+
+.mini-social {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.mini-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-circle {
+  background-color: #fff4e0;
+  padding: 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.mini-link a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+}
+
+.mini-link a:hover {
+  color: #ff6f00;
+}
+
+contact-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 20px;
+      flex-wrap: wrap;
+    }
+
+    .contact-box {
+      background: #ffffff;
+      padding: 25px 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 1000px;
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .form-side, .info-side {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #e67e22;
+      font-size: 26px;
+    }
+
+    p.subtitle {
+      margin-bottom: 25px;
+      font-size: 15px;
+      color: #333;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      background-color: #e67e22;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .small-icon {
+  margin-left: 5px;
+  color: #d63031; /* لون أيقونة مثل الأحمر مثلاً */
+}
+.contact-icons a {
+  text-decoration: none;
+  color: inherit;
+}
+.contact-icons a:hover {
+  text-decoration: underline;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+}
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.login-btn {
+  background-color: #ff7e34;
+  color: white !important;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #803e00;
+}
+
+#login-form, #login-response {
+  display: none;
+  margin-top: 10px;
+}
+
+/* =============== التصميم للجوال - الشاشات الصغيرة =============== */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  h1, h2 {
+    font-size: 22px;
+  }
+
+  .hero {
+    padding: 30px 10px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .bio {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .project-list-column {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .contact-box {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  input, textarea, button {
+    font-size: 14px;
+  }
+
+  .login-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
